@@ -83,8 +83,13 @@ WSGI_APPLICATION = 'storefront.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'NAME': 'django',
+        'CLIENT':{
+            'host':'mongodb+srv://gokulsundar188:Gokul.188@djmongo-basic.t5n9zwd.mongodb.net/?retryWrites=true&w=majority',
+            'username':'gokulsundar188',
+            'password':'Gokul.188'
+        }
     }
 }
 
